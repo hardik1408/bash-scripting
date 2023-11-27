@@ -2,4 +2,4 @@
 
 array=("hello" "hi" "how" "are" "you")
 
-echo ${array[1]}
+echo ${array[@]}
