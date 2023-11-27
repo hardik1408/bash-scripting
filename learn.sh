@@ -1,5 +1,5 @@
 #!/bin/bash
 
-echo "hi" $1
-name="hardik"
-echo "my name is" ${name}
+array=("hello" "hi" "how" "are" "you")
+
+echo ${array[1]}
