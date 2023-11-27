@@ -2,5 +2,6 @@
 
 git status
 git add .
-git commit-m$1
+read name
+git commit-m"\"$name\""
 git push origin main
