@@ -1,5 +1,9 @@
 #!/bin/bash
 
-array=("hello" "hi" "how" "are" "you")
+read -p "what is your name" name
 
-echo ${#array[0]}
+if [[ -z ${name} ]] 
+then
+	echo "please enter your name"
+fi
+
