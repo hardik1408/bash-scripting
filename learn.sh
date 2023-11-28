@@ -1,9 +1,8 @@
 #!/bin/bash
 
-users="hello hi how are you"
-
-for user in ${users}
+ctr=1
+while [[ $ctr -le 10 ]]
 do
-	echo "${user}"
+	echo "${ctr}"
+	((ctr++))
 done
-
