@@ -25,7 +25,8 @@ function cpu_check(){
 	echo ""
 }
 
-function tcp_check(){
+function tcp_check()
+	{
 	echo ""
 		echo "tcp connections on ${server_name}:"
 	echo ""
@@ -41,7 +42,11 @@ function kernel_check(){
 	echo ""
 }
 
-memory_check
-cpu_check
-tcp_check
-kernel_check
+function all_check(){
+	memory_check
+	cpu_check
+	tcp_check
+	kernel_check
+}
+
+all_check
