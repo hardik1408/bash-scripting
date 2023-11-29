@@ -24,5 +24,15 @@ function cpu_check(){
 		uptime
 	echo ""
 }
+
+function tcp_check(){
+	echo ""
+		echo "tcp connections on ${server_name}:"
+	echo ""
+		cat  /proc/net/tcp | wc -l
+	echo ""
+}
+
 memory_check
 cpu_check
+tcp_check
