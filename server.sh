@@ -33,6 +33,15 @@ function tcp_check(){
 	echo ""
 }
 
+function kernel_check(){
+	echo ""
+		echo "kernel version on ${server_name} is:"
+		echo ""
+		uname -r
+	echo ""
+}
+
 memory_check
 cpu_check
 tcp_check
+kernel_check
