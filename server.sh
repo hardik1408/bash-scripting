@@ -1,4 +1,4 @@
-\#!/bin/bash
+#!/bin/bash
 
 ############################################
 # bash script that checks:
@@ -7,6 +7,12 @@
 #	- number of tcp connections
 #	- kernel version
 ############################################
+
+
+# color variables
+green='\e[32m'
+blue='\e[34m'
+clear='\e[0m'
 
 server_name=$(hostname)
 
@@ -50,3 +56,13 @@ function all_check(){
 }
 
 all_check
+
+# color functions
+colorgreen(){
+	echo -ne $green$1$clear
+}
+colorblue(){
+	echo -ne $blue$1$clear
+}
+
+echo -ne $(colorgreen 'hello hi how are you')
