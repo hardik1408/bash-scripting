@@ -65,4 +65,27 @@ colorblue(){
 	echo -ne $blue$1$clear
 }
 
-echo -ne $(colorgreen 'hello hi how are you')
+menu(){
+echo -ne "
+My First Menu
+$(colorgreen '1)') Memory usage
+$(colorgreen '2)') CPU Load
+$(colorgreen '3)') Number of TCP connections
+$(colorgreen '4)') Kernel Version
+$(colorgreen '5)') Check all
+$(colorgreen '6)') Exit
+$(colorblue 'choose an option:') "
+	read a
+	case $a in
+		1) memory_check ; menu ;;
+		2) cou_checl ; menu ;;
+		3) tcp_check ; menu ;;
+		4) kernel_check ; menu ;;
+		5) all_checks ; menu ;;
+			0) exit 0 ;;
+			*) echo -e $red"Wrong option."$clear;
+wrongcommand;;
+	esac
+
+
+}
