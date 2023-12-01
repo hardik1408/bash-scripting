@@ -82,7 +82,7 @@ $(colorblue 'choose an option:') "
 		5) all_check ; menu ;;
 			0) exit 0 ;;
 			*) echo -e $red"Wrong option."$clear;
-wrongcommand;;
+WrongCommand;;
 	esac
 
 
