@@ -55,8 +55,6 @@ function all_check(){
 	kernel_check
 }
 
-all_check
-
 # color functions
 colorgreen(){
 	echo -ne $green$1$clear
@@ -89,3 +87,4 @@ wrongcommand;;
 
 
 }
+menu
