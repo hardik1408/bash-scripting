@@ -79,7 +79,7 @@ $(colorblue 'choose an option:') "
 		2) cou_checl ; menu ;;
 		3) tcp_check ; menu ;;
 		4) kernel_check ; menu ;;
-		5) all_checks ; menu ;;
+		5) all_check ; menu ;;
 			0) exit 0 ;;
 			*) echo -e $red"Wrong option."$clear;
 wrongcommand;;
